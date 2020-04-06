@@ -22,7 +22,7 @@ public class InventoryHandler {
 
     public Mono<ServerResponse> listInventory(ServerRequest request) {
 
-        log.info("listInventory is called");
+        log.debug("listInventory is called");
 
         return ServerResponse.ok()
                 .contentType(MediaType.APPLICATION_STREAM_JSON)
